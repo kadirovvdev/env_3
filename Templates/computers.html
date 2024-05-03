@@ -1,0 +1,11 @@
+<title>Computers</title>
+
+<h1>Computers</h1><br>
+
+
+<body>
+{% for i in computers %}
+    <a href="{% url 'details' i.pk %}" >{{ i.model }}</a><hr>
+{% endfor %}
+
+</body>
